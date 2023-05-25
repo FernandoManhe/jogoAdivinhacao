@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jogo de Adivinhação</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+<body>
+
+
+<header>
+	
+	<img src="logo.png"> </img>
+
+	<h1 class="jhont"> Jhont Guesser </h1>
+	
+</header>
+
+		<div class="linha"> &nbsp </div>
+		
+<br> <br> 
+
+<main>
+<section class="regras">
+	<h2>Regras Principais</h2>
+	<ul>
+		<li>Digite um número inteiro entre 0 e 100 no campo ao lado;</li>
+		<li>Tente adivinhar o número gerado pelo site;</li>
+		<li>Você irá pontuar de acordo com o seu número de tentativas;</li>
+		<li>Se por acaso acertar de primeira irá realizar 100 pontos;</li>
+		<li>Os pontos diminuem de acordo com a quantidade de tentativas;</li>
+	</ul>
+	<p class="sorte"> <b> BOA SORTE!!! </b> </p> <br>
+	
+	<div class="loading">
+  <svg width="64px" height="48px">
+      <polyline points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24" id="back"></polyline>
+    <polyline points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24" id="front"></polyline>
+  </svg>
+</div>
+
+
+</section>
+
+<br> <br>
+
+
+<section class="jogo">
+<h1 class="adivinha">Jogo de Adivinhação</h1>
+
+  <p>Tente adivinhar o número entre 0 e 100!</p>
+  
+  <div id="guess-form">
+    <input placeholder="Digite seu número da sorte" class="input" name="text" type="number" id="chute" min="0" max="100">
+	
+
+	<br> <br>
+	
+	<button onclick="verificarChute()"> Enviar </button>
+	<button onclick="novoJogo()"> Novo Jogo</button>
+		
+  </div>
+  
+  <div id="resultado"></div>
+</section>
+</main>
+
+<br> <br>
+<div class="linha"> &nbsp </div>
+
+<footer>
+	<div class="footer-content">
+		<h3> SENAI - FIEMG </h3>
+		<p class="pontos">  .......... </p>
+		<ul class="socials">
+			<li> <a href="https://pt-br.facebook.com/" ><i class="fa fa - facebook"> <img src="facebook.png" class="fotos"></i></a></li>
+			<li> <a href="https://twitter.com/login?lang=pt" ><i class="fa fa - twitter"> <img src="twitter.png" class="fotos"> </i></a></li>
+			<li> <a href="https://www.google.com.br/" ><i class="fa fa - google-plus">  <img src="cromada.png" class="fotos"> </i></a></li>
+			<li> <a href="https://www.youtube.com/" ><i class="fa fa - youtube">  <img src="youtube.png" class="fotos"> </i></a></li>
+			<li> <a href="https://br.linkedin.com/?src=go-pa&trk=sem-ga_campid.12619604099_asid.148548608796_crid.656532769089_kw.linked_d.c_tid.kwd-103941963_n.g_mt.e_geo.1032083&mcid=6821526239111716925&cid=&gclid=Cj0KCQjwsIejBhDOARIsANYqkD3LjSeVYK6EJjgvXn8ffGFpV2lZ_0g8OtxvKvGPqk5BT2MWIZEPMjIaAlDaEALw_wcB&gclsrc=aw.ds" ><i class="fa fa - linkedin-square"> <img src="linkedin.png" class="fotos"> </i></a></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	
+	<div class="footer-bottom">
+		<p class="pontos"> copyright &copy Senai - FIEMG. designed by <span> Fernando Manhe </span> </p>
+	</div>
+
+
+</footer>
+
+
+
+
+</body>
+</html>
